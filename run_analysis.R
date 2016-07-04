@@ -1,6 +1,7 @@
 library(dplyr)
 
 run_data_clean <- function() {
+  # Depending on your platform, this might need to be altered
   data_folder <- "UCI\ HAR\ Dataset"
   
   # Training files
@@ -31,7 +32,6 @@ run_data_clean <- function() {
   colnames(all_data) <- all_col_names
   ## subset to only get mean and std columns
   mean_data <- subset(all_data, select = mean_col_names)
-  
   # Read the activities from the activities file
   activity_labels <- read.table(activity_file)
   
@@ -58,6 +58,7 @@ run_data_clean <- function() {
   final_tidy_data <- tidy_data %>% group_by(Subject, Activity) %>%
                      summarise_each(funs(mean))
   
+  write.csv(final_tidy_data, "final_tidy_data.csv")
   final_tidy_data
 }
 
