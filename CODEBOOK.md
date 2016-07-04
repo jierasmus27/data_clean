@@ -7,5 +7,6 @@ The following data files have been consumed by the project:
 ### Input data points: 
 - test/X_test.txt
 - train/X_train.txt
+
 ### Acitivities:
 - activity_labels.txt
