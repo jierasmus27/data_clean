@@ -57,6 +57,17 @@ All values matching either mean or std
  - 2.4. Subset all data (from 2.3) to only get values of mean and std columns (from 2.2)
 
 3. Read the activities from the activities file
-- 3.1. Create a table of the y-files and activities to merge with all data from step 2.4
-- 3.2. 
+ - 3.1. Create a table of the y-files and activities to merge with all data from step 2.4
+ - 3.2. Set the activity labels on the data from 3.1 in an "Activity" column
+
+4. Clean up the column names by calling function rename_columns
+ - 4.1. Remove any of the following ("()", "-")
+ - 4.2. Replace: mean with Mean, std with Std, BodyBody with Body
+ - 4.3. Replace names starting with f with frequency, or t with time
+
+5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+  - 5.1. Merge the subject data from train and test
+  - 5.2. Bind the column of subject data to the clean data from step 4.3
+  - 5.3. Name the new column "Subject"
+  - 5.4. Summarize the data by grouping the data set from 5.3 by Subject and Activity and apply the mean to the fields affected.
 
