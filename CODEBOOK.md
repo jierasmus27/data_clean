@@ -1,4 +1,4 @@
-# Codebook for Data Clean
+# Codebook for Getting and Cleaning Data
 Codebook for the Getting and Cleaning data Coursera MOOC
 
 ## Raw data used
