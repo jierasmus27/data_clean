@@ -58,7 +58,7 @@ run_data_clean <- function() {
   final_tidy_data <- tidy_data %>% group_by(Subject, Activity) %>%
                      summarise_each(funs(mean))
   
-  write.table(final_tidy_data, "final_tidy_data.csv", row.name=FALSE)
+  write.table(final_tidy_data, "final_tidy_data.txt", row.name=FALSE)
   final_tidy_data
 }
 
