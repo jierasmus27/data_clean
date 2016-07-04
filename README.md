@@ -7,7 +7,6 @@ This is the peer reviewed final project for the Getting and Cleaning Data MOOC p
 - run_analysis.R - Runs an analysis on the Dataset
 - README.md - A brief description of the project and it's components
 - CODEBOOK.md - Indicates all the variables and summaries calculated, along with units, and other relevant information
-- final_tidy_data.csv - An example of the clean data
 
 ## Prerequisites to use this project
 1. Check the project out of Github and into a local folder. 
@@ -21,4 +20,4 @@ This is the peer reviewed final project for the Getting and Cleaning Data MOOC p
 
 The tidy_set variable will now contain the tidy data as required.
 
-Additionally a csv will be wriiten to the current folder containing the results.
+Additionally a txt will be wriiten to the current folder containing the results.
