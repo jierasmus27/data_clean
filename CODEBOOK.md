@@ -5,14 +5,21 @@ Codebook for the Getting and Cleaning data Coursera MOOC
 
 The following data files have been consumed by the project:
 ### Input data points: 
+#### Input files:
 - test/X_test.txt
 - train/X_train.txt
 
-### Activities:
+#### Variables used
+
+### The subject that performed an activity:
+- train/subject_train.txt
+- test/subject_test.txt
+
+### Activities performed per subject:
 - train/y_train.txt
 - test/y_test.txt
 
-### Acitivity Labels:
+### Acitivity Labels (the name of the activity):
 - activity_labels.txt
 
 ### Features:
