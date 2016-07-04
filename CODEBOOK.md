@@ -8,5 +8,12 @@ The following data files have been consumed by the project:
 - test/X_test.txt
 - train/X_train.txt
 
-### Acitivities:
+### Activities:
+- train/y_train.txt
+- test/y_test.txt
+
+### Acitivity Labels:
 - activity_labels.txt
+
+### Features:
+- features.txt
